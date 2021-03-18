@@ -43,13 +43,13 @@ $(document).ready(function(){
         arrows: true, // стрелки, true есть false - стрелок нет
         dots: false, //точки true есть false - точек нет
         adaptiveHeight: true,//высота посдтраивается автоматически под конкретный слайд
-        slidesToShow: 6,//каличество слайдов за раз на треке
+        slidesToShow: 5,//каличество слайдов за раз на треке
         slidesToScroll: 1, //количество пролистываемых слайдеров за раз
         speed: 1000,// скорость пролистывания слайдов в милисекундах (1 сек)
         easing:'ease', // тип анимации
         infinie: true, //бесконечность слайдера true - бесконечная
         initialSlide: 1,// с какого слайда стартует
-        autoplay:true, //автопроигрывание слайдов
+        autoplay:false, //автопроигрывание слайдов
         autoplaySpeed:1500, // скорость авто проигрывание
         pauseOnFocus: true, //пауза когда кликнули на слайдер
         pauseOnHover: true, // пауза когда навели на слайдер 
