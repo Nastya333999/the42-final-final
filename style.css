@@ -696,9 +696,9 @@ hr{
     color: #444;
     transition: .3s linear;
 }
-.widget-list a:hover {color: #b99d61;}
-
-
+.widget-list a:hover 
+    {color: #b99d61;
+}
 
 /*Общие параметры для слайдера 2*/
 .slider .slick-track{
