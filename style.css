@@ -17,6 +17,11 @@ a{
 .link, .num,.four-section-txt, .second-main-txt, .shop_now, .third-txt-main,.text-line,.prise,.four-section-txt,.five-section-txt,.icons-txt,.txt-six,.seven-txt,.txt-under-pic,.main-nine-txt, .small-nine-txt, .input-style, .ten-txt, .footer-list, .foo-txt, .widget, .slide-name{
     font-family:  'Poppins', sans-serif;
 }
+.third-txt-main,.text-line,.prise,.four-section-txt,.five-section-txt,.icons-txt,.txt-six,.seven-txt,.txt-under-pic
+.txt-under-pic{
+    font-weight: normal;
+    font-size: 18px;
+}
 
 
 /*---------HEADER------------*/
@@ -51,6 +56,7 @@ a{
 .navigation-list{
     display:flex;
     justify-content:space-between;
+    border-bottom: 1px solid transparent;
 }
 .navigation-link:hover{
     border-bottom: 1px solid #8A5137;
@@ -115,6 +121,10 @@ a{
     justify-content: center;
     margin: auto;
 }
+.shop_now_button:hover{
+    background-color: #8A5137;
+    transition: 0.5;
+}
 .shop_now{
     font-size: 16px;
     color: white;
@@ -127,6 +137,7 @@ a{
     background-color: black;
     min-height: 435px;
     display: flex;
+    flex-direction:row-reverse;
     justify-content:space-around;
 }
 .second{
@@ -265,6 +276,10 @@ a{
     border-radius: 50%;
     margin-left: 5%;
 }
+.icon:hover{
+    border: 2px solid #8A5137;
+    transition: 0.5s;
+}
 .icon-one{
     width: 50%;
 }
@@ -351,13 +366,6 @@ a{
     background: url(./img/3.png)  no-repeat center;
     background-size: cover;
 }
-.shop_now, .third-txt-main,.text-line,.prise,.four-section-txt,.five-section-txt,.icons-txt,.txt-six,.seven-txt,.txt-under-pic
-.txt-under-pic{
-    font-weight: normal;
-    font-size: 18px;
-}
-
-
 /*section-eight*/
 .section-eight{
     min-height: 446px;
@@ -650,6 +658,23 @@ hr{
     .second-main-txt{
         font-size: 16px;
     }
+    .secon-line{
+        flex-direction:column;
+        justify-content: center;
+    }
+    .second-pic{
+        width: 100%;
+        transform: translate(2%, -2%);
+    }
+    .logo-second{
+        width: 100%;
+    }
+    .cream-img {
+        margin: 73% 0 0 0;
+    }
+    .third-blocs-main{
+        margin: 0 0 0 60%;
+    }
 }
 @media(max-width: 320px){
     .nav{
@@ -660,6 +685,20 @@ hr{
     }
     .widget{
         display: inline !important;
+    }
+    .secon-line{
+        flex-direction:column;
+        justify-content: center;
+    }
+    .second-pic{
+        width: 100%;
+        transform: translate(2%, -2%);
+    }
+    .logo-second{
+        width: 100%;
+    }
+    .main-txt-banner{
+        margin: 40% 0;
     }
 }
 .widget {
@@ -696,11 +735,11 @@ hr{
     color: #444;
     transition: .3s linear;
 }
-.widget-list a:hover 
-    {color: #b99d61;
-}
+.widget-list a:hover {color: #b99d61;}
 
-/*Общие параметры для слайдера 2*/
+
+
+/*Общие параметры для слайдера*/
 .slider .slick-track{
     display: flex; /*картинки в ряд в ленте*/
     align-items: flex-start;
@@ -757,7 +796,7 @@ hr{
 /*Slider-two*/
 .slider-two{
     position: relative;
-    margin: 0px 1%;
+    margin: 0px 71px;
     overflow: hidden;
 }
 .slider-two .slick-track{
@@ -779,13 +818,11 @@ hr{
 }
 .slider-two .slick-arrow.slick-prev{
     left: 0;
-    background: url(./img/str.svg) 0 0 / 50% no-repeat;
-    transform: translate(0%, 65%);
-    overflow: visible !important;
+    background: url(./img/str.svg) 0 0 / 100% no-repeat;
 }
 .slider-two .slick-arrow.slick-next{
     right: 0;
-    background: url(./img/str.svg) 0 0 / 50% no-repeat;
+    background: url(./img/str.svg) 0 0 / 100% no-repeat;
     transform: rotate(180deg);
 }
 .slider-two .slider .slick-dots{
@@ -794,6 +831,7 @@ hr{
     justify-content: center;/*по горизонтали в ряд*/
 }
 .slider-two .slider .slick-dots li{
+    list-style: none ;/*убираем точки для списка*/
     margin: 0 10px;
 }
 .slider-two .slider .slick-dots li button{
@@ -801,7 +839,6 @@ hr{
 }
 .slider-two .slider_item {
     margin: 0 40px;
-    width: 216px;
 }
 .slider-two .slick-arrow.slick-disabled{
     opacity: 0.2;
