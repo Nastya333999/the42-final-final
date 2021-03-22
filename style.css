@@ -435,6 +435,19 @@ a{
     font-size: 40px;
     text-transform: uppercase;
 }
+.under-slider{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+.under-slider-txt{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 1%;
+    line-height: 125.5%;
+    text-transform: uppercase;
+}
 
 
 /*FOOTER*/
@@ -516,24 +529,6 @@ hr{
     color: #FFFFFF;
     opacity: 0.4;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*MEDIA*/
 @media(max-width: 1024px){
@@ -785,9 +780,6 @@ hr{
 .slider .slick-dots li button{
     display: none;
 }
-.slider_item {
-    margin: 0 1%;
-}
 /* Стрелка не активная */
 .slider .slick-arrow.slick-disabled{
     opacity: 0.2;
@@ -796,7 +788,6 @@ hr{
 /*Slider-two*/
 .slider-two{
     position: relative;
-    margin: 0px 71px;
     overflow: hidden;
 }
 .slider-two .slick-track{
@@ -818,11 +809,11 @@ hr{
 }
 .slider-two .slick-arrow.slick-prev{
     left: 0;
-    background: url(./img/str.svg) 0 0 / 100% no-repeat;
+    background: url(./img/str.svg) 0 0 / 80% no-repeat;
 }
 .slider-two .slick-arrow.slick-next{
     right: 0;
-    background: url(./img/str.svg) 0 0 / 100% no-repeat;
+    background: url(./img/str.svg) 0 0 / 80% no-repeat;
     transform: rotate(180deg);
 }
 .slider-two .slider .slick-dots{
