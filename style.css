@@ -516,6 +516,25 @@ hr{
     color: #FFFFFF;
     opacity: 0.4;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MEDIA*/
 @media(max-width: 1024px){
     .navigation{
@@ -716,9 +735,9 @@ hr{
     color: #444;
     transition: .3s linear;
 }
-.widget-list a:hover {
-    color: #b99d61;
-}
+.widget-list a:hover {color: #b99d61;}
+
+
 
 /*Общие параметры для слайдера*/
 .slider .slick-track{
