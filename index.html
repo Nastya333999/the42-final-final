@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ecd5fe7939.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>The42 test</title>
 </head>
 <body>
@@ -254,35 +256,50 @@
             <div class="ten-section-txt">
                 <p class="ten-txt">@coffee_face</p>
             </div>
-            <div class="slider-two">
-                    <div class="slider_item">
-                        <img src="./img/slide1.png" alt="">
-                    </div>
-                    <div class="slider_item">
-                        <img src="./img/slide2.png" alt="">
-                    </div>
-                    <div class="slider_item">
-                        <img src="./img/slide3.png" alt="">
-                    </div>
-                    <div class="slider_item">
-                        <img src="./img/slide1.png" alt="">
-                    </div>
-                    <div class="slider_item">
-                        <img src="./img/slide2.png" alt="">
-                    </div>
-                    <div class="slider_item">
-                        <img src="./img/slide3.png" alt="">
-                    </div>
-                    <div class="slider_item">
-                        <img src="./img/slide1.png" alt="">
-                    </div>
-                    <div class="slider_item">
-                        <img src="./img/slide2.png" alt="">
-                    </div>
-                    <div class="slider_item">
-                        <img src="./img/slide3.png" alt="">
-                    </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="./img/slide1.png" alt=""></div>
+                <div class="item"><img src="./img/slide2.png" alt=""></div>
+                <div class="item"><img src="./img/slide3.png" alt=""></div>
+                <div class="item"><img src="./img/slide1.png" alt=""></div>
+                <div class="item"><img src="./img/slide2.png" alt=""></div>
+                <div class="item"><img src="./img/slide3.png" alt=""></div>
+                <div class="item"><img src="./img/slide1.png" alt=""></div>
+                <div class="item"><img src="./img/slide2.png" alt=""></div>
+                <div class="item"><img src="./img/slide3.png" alt=""></div>
             </div>
+
+
+
+            <!-- <div class="slider-two">
+                    <div class="slider_item">
+                        <img src="./img/slide1.png" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slide2.png" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slide3.png" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slide1.png" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slide2.png" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slide3.png" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slide1.png" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slide2.png" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slide3.png" alt="">
+                    </div>
+            </div> -->
             <div class="under-slider">
                 <img src="./img/insta.svg" alt="">
                 <p class="under-slider-txt">Join us on instagram for new products, great giveaways and more!</p>
@@ -341,6 +358,8 @@
             </div>
         </div>
     </footer>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
