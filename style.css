@@ -1,6 +1,6 @@
 body{
     max-width: 1440px;
-    margin: 0 0;
+    margin: 0 auto;
 }
 li{
     list-style: none;
@@ -784,8 +784,39 @@ hr{
 .slider .slick-arrow.slick-disabled{
     opacity: 0.2;
 }
+.slider .slider_item{
+    padding: 0 50px;
+    width: 650px !important;
+}
 
 /*Slider-two*/
+
+.owl-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 0;
+    z-index: 100;
+}
+.owl-carousel {
+    max-width: 1330px;
+    margin: 0 auto;
+    z-index: 1;
+    overflow:visible;
+}
+.owl-item{
+    width: 213px !important;
+    height: 205px !important;
+    margin: 0 !important;
+    padding: 0 10px 0 0;
+}
+.owl-prev{
+    margin: 0 -20px 0 0 ;
+    overflow:visible;
+    transform: translate(-40px, -100px);
+}
+.owl-next{
+    transform: translate(40px, -100px);
+}
 .slider-two{
     position: relative;
     overflow: hidden;

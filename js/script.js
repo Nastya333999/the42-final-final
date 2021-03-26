@@ -86,20 +86,23 @@ $(document).ready(function(){
         ]
     });
 });
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
+$(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoWidth:false,
+        navText: ['<img src="./img/left-owl.svg" alt="">', '<img src="./img/righr.svg" alt="">'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:6
+            }
         }
-    }
-})
+    });
+});
