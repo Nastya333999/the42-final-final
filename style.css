@@ -1,6 +1,9 @@
 body{
     max-width: 1440px;
     margin: 0 auto;
+    font-weight: normal;
+    font-size: 18px;
+    font-family:  'Poppins', sans-serif;
 }
 li{
     list-style: none;
@@ -8,22 +11,9 @@ li{
 a{
     text-decoration: none;
 }
-
-
 .black-line-txt, .main-txt, .second-line-txt, .reviews, .txt-after-review,.slide{
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
-.link, .num,.four-section-txt, .second-main-txt, .shop_now, .third-txt-main,.text-line,.prise,.four-section-txt,.five-section-txt,.icons-txt,.txt-six,.seven-txt,.txt-under-pic,.main-nine-txt, .small-nine-txt, .input-style, .ten-txt, .footer-list, .foo-txt, .widget, .slide-name{
-    font-family:  'Poppins', sans-serif;
-}
-.third-txt-main,.text-line,.prise,.four-section-txt,.five-section-txt,.icons-txt,.txt-six,.seven-txt,.txt-under-pic
-.txt-under-pic{
-    font-weight: normal;
-    font-size: 18px;
-}
-
-
 /*---------HEADER------------*/
 .black-line{
     min-height: 38px;
@@ -37,6 +27,12 @@ a{
     justify-content:center;
 }
 /*---------NAVIGATION------------*/
+.menu-button{
+    border: none;
+    font-size: 14px;
+    font-family:  'Poppins', sans-serif;
+    border-color: transparent;
+}
 .nav{
     height: 880px;
     background: linear-gradient(to left,  rgb(252, 209, 194, .2),rgb(255, 255, 255)); 
@@ -89,13 +85,9 @@ a{
 .navigation-bar, .logo, .bag{
     margin: auto 0;
 }
-
 .main{
     min-height: 780px;
 }
-/* .pic_1{
-    width: 50%;
-} */
 .main{
     display: flex;
     position: absolute;
@@ -160,7 +152,6 @@ a{
     justify-content: center;
     transform: translate(-5%, -15%);
 }
-
 /*THIRD SECTION*/
 .section-third{
     display: flex;
@@ -240,7 +231,6 @@ a{
     height: 100%;
     background:  url(./img/ellipse11.svg);
 }
-
 /*FIVE*/
 .five{
     margin: 0;
@@ -318,8 +308,6 @@ a{
     font-size: 18px;
     text-align: center;
 }
-
-
 /*section seven*/
 .seven{
     background: black url("./img/rectangle.svg")  no-repeat;
@@ -343,28 +331,33 @@ a{
 }
 .section-eight{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 3%;
     transform: translate(0, -40%);
+    max-width: 1317px;
 }
-.seven-img{
-    height: 299px;
-    padding: 5% 0;
+.txt-under-pic{
+    padding-right: 13%;
 }
 .one, .two, .free:hover{
-    background-blend-mode:red;
+    width: 426px !important;
+    height: 296px !important;
+    margin-right: 8px !important;
 }
 .one{
     background: url(./img/1.png)  no-repeat center;
     background-size: cover;
 }
 .two{
-    background: url(./img/2.png)  no-repeat center;
+    background: linear-gradient( #8a5137a8, #8a5137a8), url(./img/2.png) center center no-repeat ;
     background-size: cover;
 }
 .free{
     background: url(./img/3.png)  no-repeat center;
     background-size: cover;
+    width: 426px !important;
+    height: 296px !important;
+    margin-right: 8px !important;
 }
 /*section-eight*/
 .section-eight{
@@ -465,7 +458,6 @@ hr{
     background-color: rgb(93, 93, 93);
 }
 .footer-main{
-    /* border-bottom: 1px solid rgb(93, 93, 93); */
     display: flex;
     padding: 2% 3%;
     margin: 0 0 3% 0;
@@ -479,10 +471,6 @@ hr{
     font-size: 16px;
     color: white;
 }
-.footer-list:hover{
-    color:#8A5137;
-    transition: 0.2;
-}
 .footer-carts{
     padding: 0 5%;
     display: flex;
@@ -494,27 +482,11 @@ hr{
     display: flex;
     justify-content: flex-end;
 }
-.fa-facebook-f {
+.fa-facebook-f, .fa-twitter, .fa-instagram {
     color: white ;
     padding: 0 5%;
 }
-.fa-twitter{
-    color: white ;
-    padding: 0 5%;
-}
-.fa-instagram{
-    color: white ;
-    padding: 0 5%;
-}
-.fa-facebook-f:hover{
-    color:#8A5137;
-    transition: 0.2;
-}
-.fa-twitter:hover{
-    color:#8A5137;
-    transition: 0.2;
-}
-.fa-instagram:hover{
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover, .footer-list:hover {
     color:#8A5137;
     transition: 0.2;
 }
@@ -705,11 +677,13 @@ hr{
 .widget-link{
     display: none !important;
 }
-
-.widget-title ~.widget-link,
+.style{
+    display:block !important;
+}
+/* .widget-title ~.widget-link,
 .widget:hover ~.widget-link{
     display: block !important;
-}
+} */
 .widget-title {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -730,10 +704,9 @@ hr{
     color: #444;
     transition: .3s linear;
 }
-.widget-list a:hover {color: #b99d61;}
-
-
-
+.widget-list a:hover {
+    color: #b99d61;
+}
 /*Общие параметры для слайдера*/
 .slider .slick-track{
     display: flex; /*картинки в ряд в ленте*/
@@ -779,14 +752,6 @@ hr{
 }
 .slider .slick-dots li button{
     display: none;
-}
-/* Стрелка не активная */
-.slider .slick-arrow.slick-disabled{
-    opacity: 0.2;
-}
-.slider .slider_item{
-    padding: 0 50px;
-    width: 650px !important;
 }
 
 /*Slider-two*/
