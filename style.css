@@ -27,6 +27,12 @@ a{
     justify-content:center;
 }
 /*---------NAVIGATION------------*/
+.menu-button{
+    border: none;
+    font-size: 14px;
+    font-family:  'Poppins', sans-serif;
+    border-color: transparent;
+}
 .nav{
     height: 880px;
     background: linear-gradient(to left,  rgb(252, 209, 194, .2),rgb(255, 255, 255)); 
@@ -671,10 +677,13 @@ hr{
 .widget-link{
     display: none !important;
 }
-.widget-title ~.widget-link,
+.style{
+    display:block !important;
+}
+/* .widget-title ~.widget-link,
 .widget:hover ~.widget-link{
     display: block !important;
-}
+} */
 .widget-title {
     text-transform: uppercase;
     letter-spacing: 2px;
